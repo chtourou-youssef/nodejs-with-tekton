@@ -17,5 +17,5 @@ spec:
     - name: "imageUrl"
       value: "registry-docker-registry.kube-system:5000/app"
     - name: "imageTag"
-      value: "0.0.2"
+      value: "0.0.4"
   serviceAccountName: service-account
