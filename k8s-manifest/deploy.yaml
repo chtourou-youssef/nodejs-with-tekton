@@ -7,7 +7,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 9090
+    - port: 8080
       name: app
       nodePort: 32001
   selector:
