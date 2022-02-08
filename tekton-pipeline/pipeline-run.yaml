@@ -15,7 +15,7 @@ spec:
     - name: pathToYamlFile
       value: "k8s/deploy.yaml"
     - name: "imageUrl"
-      value: "registry-docker-registry.kube-system:5000/apple"
+      value: "registry-docker-registry.kube-system:5000/app"
     - name: "imageTag"
-      value: "0.0.3"
+      value: "0.0.1"
   serviceAccountName: service-account

@@ -9,4 +9,4 @@ spec:
     - name: revision
       value: main
     - name: url
-      value: https://github.com/chtourou-youssef/NodeJS-YCH
+      value: https://github.com/chtourou-youssef/nodejs-with-tekton
