@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: app
+  name: myapp-svc
   labels:
-    app: app
+    app: nginx
 spec:
   type: NodePort
   ports:
@@ -11,23 +11,23 @@ spec:
       name: app
       nodePort: 32001
   selector:
-    app: app
+    app: nginx
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app
+  name: myapp-dep
   labels:
-    app: app
+    app: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app
+      app: nginx
   template:
     metadata:
       labels:
-        app: app
+        app: nginx
     spec:
       containers:
       - name: app
