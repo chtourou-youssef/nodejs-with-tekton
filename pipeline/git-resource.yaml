@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+# Pipeline Resources are entities that define the locations for inputs ingested and outputs produced by the steps in Tasks.
+metadata:
+  name: git
+spec:
+  type: git
+  params:
+    - name: revision
+      value: main
+    - name: url
+      value: https://github.com/chtourou-youssef/NodeJS-YCH
